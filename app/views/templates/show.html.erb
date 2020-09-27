@@ -1,0 +1,18 @@
+<div id=container>
+
+<div id="current_region">
+<b>Region</b> <%= session[:region]%>
+</div>
+
+<h1>AWS CloudFormation Template</h1>
+You can save the AWS CloudFormation template in an existing S3 bucket in your account by selecting a bucket and
+clicking on the <i>Save</i> button below. Alternatively, you can cut and paste the template content below and store it locally
+or in your source control repository. NOTE: If you save the template to an S3 bucket in a different AWS region from the one used to create the template, launching it in the new AWS region will likely fail since the template may have hardcoded values based on the original AWS region.
+<p/>
+<%= render 'save_template_form' %>
+<p/>
+<pre>
+<%= JSON.pretty_generate(@json_template) %>
+</pre>
+</p>
+</div>

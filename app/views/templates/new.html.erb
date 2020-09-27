@@ -1,0 +1,25 @@
+<div id="container">
+
+<div id="current_region">
+<b>Region</b> <%= session[:region]%>
+</div>
+<h1>AWS CloudFormer</h1>
+
+<% breadcrumb = "" %>
+<% @template.steps.each do |step| %>
+  <% if step == @template.current_step %>
+    <% breadcrumb = breadcrumb + "<td style=\"width:90px\"><font color=\"#d29b26\"><b>"  + @template.text_for_step[step][:step_breadcrumb] + "</b></td>" %>
+  <% else %>
+    <% breadcrumb = breadcrumb  + "<td style=\"width:90px\"><font color=\"#fec335\"><small>" + @template.text_for_step[step][:step_breadcrumb] + "</small></td>"%>
+  <% end %>
+<% end %>
+<table background="/images/breadcrumb.gif">
+<th style="height:15px">
+</th>
+<tr>
+<%= breadcrumb.html_safe %>
+</tr>
+</table>
+
+<%= render 'new_template_form' %>
+</div>

@@ -1,0 +1,713 @@
+Migrating to CreateTemplates (20110515162738)
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in up at /home/ec2-user/cloudformer/db/migrate/20110515162738_create_templates.rb:8)
+Migrating to AddSessionsTable (20110515162833)
+DEPRECATION WARNING: `#timestamps` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in up at /home/ec2-user/cloudformer/db/migrate/20110515162833_add_sessions_table.rb:6)
+Started GET "/" for 139.162.116.133 at 2020-09-26 20:37:13 +0000
+Processing by TemplatesController#index as HTML
+Filter chain halted as #<Proc:0x00000000044265e0@/usr/local/share/ruby/gems/2.4/gems/actionpack-4.2.11.1/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started GET "/" for 128.14.133.58 at 2020-09-26 21:01:47 +0000
+Processing by TemplatesController#index as */*
+Filter chain halted as #<Proc:0x00000000044265e0@/usr/local/share/ruby/gems/2.4/gems/actionpack-4.2.11.1/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started GET "/" for 51.158.24.203 at 2020-09-26 21:31:28 +0000
+Processing by TemplatesController#index as HTML
+Filter chain halted as #<Proc:0x00000000044265e0@/usr/local/share/ruby/gems/2.4/gems/actionpack-4.2.11.1/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started GET "/" for 185.189.12.23 at 2020-09-26 23:06:41 +0000
+Processing by TemplatesController#index as HTML
+Filter chain halted as #<Proc:0x00000000044265e0@/usr/local/share/ruby/gems/2.4/gems/actionpack-4.2.11.1/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started GET "/" for 192.241.235.5 at 2020-09-26 23:57:34 +0000
+Processing by TemplatesController#index as */*
+Filter chain halted as #<Proc:0x00000000044265e0@/usr/local/share/ruby/gems/2.4/gems/actionpack-4.2.11.1/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started GET "/" for 196.52.43.130 at 2020-09-27 00:26:45 +0000
+Processing by TemplatesController#index as HTML
+Filter chain halted as #<Proc:0x00000000044265e0@/usr/local/share/ruby/gems/2.4/gems/actionpack-4.2.11.1/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started GET "/" for 103.145.13.24 at 2020-09-27 01:36:13 +0000
+Processing by TemplatesController#index as HTML
+Filter chain halted as #<Proc:0x00000000044265e0@/usr/local/share/ruby/gems/2.4/gems/actionpack-4.2.11.1/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started GET "/" for 184.105.247.196 at 2020-09-27 02:16:08 +0000
+Processing by TemplatesController#index as HTML
+Filter chain halted as #<Proc:0x00000000044265e0@/usr/local/share/ruby/gems/2.4/gems/actionpack-4.2.11.1/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started GET "/" for 74.120.14.36 at 2020-09-27 02:22:07 +0000
+Processing by TemplatesController#index as HTML
+Filter chain halted as #<Proc:0x00000000044265e0@/usr/local/share/ruby/gems/2.4/gems/actionpack-4.2.11.1/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started GET "/" for 74.120.14.36 at 2020-09-27 02:22:07 +0000
+Processing by TemplatesController#index as */*
+Filter chain halted as #<Proc:0x00000000044265e0@/usr/local/share/ruby/gems/2.4/gems/actionpack-4.2.11.1/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started GET "/" for 209.17.96.98 at 2020-09-27 02:37:49 +0000
+Processing by TemplatesController#index as HTML
+Filter chain halted as #<Proc:0x00000000044265e0@/usr/local/share/ruby/gems/2.4/gems/actionpack-4.2.11.1/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started GET "/" for 80.82.77.33 at 2020-09-27 02:54:40 +0000
+Processing by TemplatesController#index as HTML
+Filter chain halted as #<Proc:0x00000000044265e0@/usr/local/share/ruby/gems/2.4/gems/actionpack-4.2.11.1/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started GET "/sitemap.xml" for 80.82.77.33 at 2020-09-27 02:54:52 +0000
+
+ActionController::RoutingError (No route matches [GET] "/sitemap.xml"):
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.11.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.11.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.1) lib/rails/application.rb:165:in `call'
+  railties (4.2.11.1) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.2.11.1) lib/rails/railtie.rb:194:in `method_missing'
+  thin (1.6.4) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.4) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.4) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.4) lib/thin/connection.rb:53:in `process'
+  thin (1.6.4) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.9.1) lib/eventmachine.rb:193:in `run_machine'
+  eventmachine (1.0.9.1) lib/eventmachine.rb:193:in `run'
+  thin (1.6.4) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.4) lib/thin/server.rb:162:in `start'
+  thin (1.6.4) lib/thin/controllers/controller.rb:87:in `start'
+  thin (1.6.4) lib/thin/runner.rb:200:in `run_command'
+  thin (1.6.4) lib/thin/runner.rb:156:in `run!'
+  thin (1.6.4) bin/thin:6:in `<top (required)>'
+  /usr/local/bin/thin:23:in `load'
+  /usr/local/bin/thin:23:in `<main>'
+
+
+Started GET "/.well-known/security.txt" for 80.82.77.33 at 2020-09-27 02:54:52 +0000
+
+ActionController::RoutingError (No route matches [GET] "/.well-known/security.txt"):
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.11.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.11.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.1) lib/rails/application.rb:165:in `call'
+  railties (4.2.11.1) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.2.11.1) lib/rails/railtie.rb:194:in `method_missing'
+  thin (1.6.4) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.4) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.4) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.4) lib/thin/connection.rb:53:in `process'
+  thin (1.6.4) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.9.1) lib/eventmachine.rb:193:in `run_machine'
+  eventmachine (1.0.9.1) lib/eventmachine.rb:193:in `run'
+  thin (1.6.4) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.4) lib/thin/server.rb:162:in `start'
+  thin (1.6.4) lib/thin/controllers/controller.rb:87:in `start'
+  thin (1.6.4) lib/thin/runner.rb:200:in `run_command'
+  thin (1.6.4) lib/thin/runner.rb:156:in `run!'
+  thin (1.6.4) bin/thin:6:in `<top (required)>'
+  /usr/local/bin/thin:23:in `load'
+  /usr/local/bin/thin:23:in `<main>'
+
+
+Started GET "/" for 192.35.168.219 at 2020-09-27 05:35:01 +0000
+Processing by TemplatesController#index as HTML
+Filter chain halted as #<Proc:0x00000000044265e0@/usr/local/share/ruby/gems/2.4/gems/actionpack-4.2.11.1/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started GET "/" for 192.35.168.219 at 2020-09-27 05:35:01 +0000
+Processing by TemplatesController#index as */*
+Filter chain halted as #<Proc:0x00000000044265e0@/usr/local/share/ruby/gems/2.4/gems/actionpack-4.2.11.1/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started GET "/" for 35.233.24.96 at 2020-09-27 07:15:04 +0000
+Processing by TemplatesController#index as */*
+Filter chain halted as #<Proc:0x00000000044265e0@/usr/local/share/ruby/gems/2.4/gems/actionpack-4.2.11.1/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started GET "/" for 167.248.133.33 at 2020-09-27 08:34:01 +0000
+Processing by TemplatesController#index as HTML
+Filter chain halted as #<Proc:0x00000000044265e0@/usr/local/share/ruby/gems/2.4/gems/actionpack-4.2.11.1/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started GET "/" for 167.248.133.33 at 2020-09-27 08:34:01 +0000
+Processing by TemplatesController#index as */*
+Filter chain halted as #<Proc:0x00000000044265e0@/usr/local/share/ruby/gems/2.4/gems/actionpack-4.2.11.1/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started GET "/" for 185.142.236.40 at 2020-09-27 09:49:00 +0000
+Processing by TemplatesController#index as HTML
+Filter chain halted as #<Proc:0x00000000044265e0@/usr/local/share/ruby/gems/2.4/gems/actionpack-4.2.11.1/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started GET "/sitemap.xml" for 185.142.236.40 at 2020-09-27 09:49:32 +0000
+
+ActionController::RoutingError (No route matches [GET] "/sitemap.xml"):
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.11.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.11.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.1) lib/rails/application.rb:165:in `call'
+  railties (4.2.11.1) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.2.11.1) lib/rails/railtie.rb:194:in `method_missing'
+  thin (1.6.4) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.4) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.4) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.4) lib/thin/connection.rb:53:in `process'
+  thin (1.6.4) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.9.1) lib/eventmachine.rb:193:in `run_machine'
+  eventmachine (1.0.9.1) lib/eventmachine.rb:193:in `run'
+  thin (1.6.4) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.4) lib/thin/server.rb:162:in `start'
+  thin (1.6.4) lib/thin/controllers/controller.rb:87:in `start'
+  thin (1.6.4) lib/thin/runner.rb:200:in `run_command'
+  thin (1.6.4) lib/thin/runner.rb:156:in `run!'
+  thin (1.6.4) bin/thin:6:in `<top (required)>'
+  /usr/local/bin/thin:23:in `load'
+  /usr/local/bin/thin:23:in `<main>'
+
+
+Started GET "/.well-known/security.txt" for 185.142.236.40 at 2020-09-27 09:49:34 +0000
+
+ActionController::RoutingError (No route matches [GET] "/.well-known/security.txt"):
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.11.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.11.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.1) lib/rails/application.rb:165:in `call'
+  railties (4.2.11.1) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.2.11.1) lib/rails/railtie.rb:194:in `method_missing'
+  thin (1.6.4) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.4) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.4) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.4) lib/thin/connection.rb:53:in `process'
+  thin (1.6.4) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.9.1) lib/eventmachine.rb:193:in `run_machine'
+  eventmachine (1.0.9.1) lib/eventmachine.rb:193:in `run'
+  thin (1.6.4) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.4) lib/thin/server.rb:162:in `start'
+  thin (1.6.4) lib/thin/controllers/controller.rb:87:in `start'
+  thin (1.6.4) lib/thin/runner.rb:200:in `run_command'
+  thin (1.6.4) lib/thin/runner.rb:156:in `run!'
+  thin (1.6.4) bin/thin:6:in `<top (required)>'
+  /usr/local/bin/thin:23:in `load'
+  /usr/local/bin/thin:23:in `<main>'
+
+
+Started GET "/" for 83.97.20.30 at 2020-09-27 12:55:54 +0000
+Processing by TemplatesController#index as HTML
+Filter chain halted as #<Proc:0x00000000044265e0@/usr/local/share/ruby/gems/2.4/gems/actionpack-4.2.11.1/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started GET "/" for 98.116.152.207 at 2020-09-27 13:37:37 +0000
+Processing by TemplatesController#index as HTML
+Filter chain halted as #<Proc:0x00000000044265e0@/usr/local/share/ruby/gems/2.4/gems/actionpack-4.2.11.1/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started GET "/" for 98.116.152.207 at 2020-09-27 13:37:42 +0000
+Processing by TemplatesController#index as HTML
+Filter chain halted as #<Proc:0x00000000044265e0@/usr/local/share/ruby/gems/2.4/gems/actionpack-4.2.11.1/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+Started GET "/" for 98.116.152.207 at 2020-09-27 13:37:45 +0000
+Processing by TemplatesController#index as HTML
+  Rendered templates/_start_process_form.html.erb (2.4ms)
+  Rendered templates/index.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 20ms (Views: 9.1ms | ActiveRecord: 0.6ms)
+Started POST "/newtemplate" for 98.116.152.207 at 2020-09-27 13:38:24 +0000
+Processing by TemplatesController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1WgMmPvkW9zcNh9iwBhIFydlSeeiZKmShrk6iBfWAIKDgV0v88c5EguuQAxQkI4EyFFnwkl+h6Dl5Xa1/hPtVA==", "region_name"=>"us-east-1", "submit.x"=>"41", "submit.y"=>"11"}
+[AWS Route53 200 0.130226 0 retries] list_hosted_zones()  
+
+[AWS Route53 200 0.140136 0 retries] list_hosted_zones()  
+
+[AWS Route53 200 0.036595 0 retries] list_health_checks()  
+
+[AWS EC2 200 0.180304 0 retries] describe_vpcs()  
+
+[AWS EC2 200 0.058125 0 retries] describe_vpc_attribute(:attribute=>"enableDnsSupport",:vpc_id=>"vpc-0b706bcc0b762c91e")  
+
+[AWS EC2 200 0.045485 0 retries] describe_vpc_attribute(:attribute=>"enableDnsHostnames",:vpc_id=>"vpc-0b706bcc0b762c91e")  
+
+[AWS EC2 200 0.055858 0 retries] describe_vpc_attribute(:attribute=>"enableDnsSupport",:vpc_id=>"vpc-08f3817720999fffe")  
+
+[AWS EC2 200 0.040317 0 retries] describe_vpc_attribute(:attribute=>"enableDnsHostnames",:vpc_id=>"vpc-08f3817720999fffe")  
+
+[AWS EC2 200 0.05928 0 retries] describe_vpc_attribute(:attribute=>"enableDnsSupport",:vpc_id=>"vpc-d02779aa")  
+
+[AWS EC2 200 0.043893 0 retries] describe_vpc_attribute(:attribute=>"enableDnsHostnames",:vpc_id=>"vpc-d02779aa")  
+
+[AWS EC2 200 0.170968 0 retries] describe_subnets()  
+
+[AWS EC2 200 0.063682 0 retries] describe_internet_gateways()  
+
+[AWS EC2 200 0.101915 0 retries] describe_customer_gateways()  
+
+[AWS EC2 200 0.060871 0 retries] describe_vpn_gateways()  
+
+[AWS EC2 200 0.069628 0 retries] describe_dhcp_options()  
+
+[AWS EC2 200 0.043683 0 retries] describe_vpn_connections()  
+
+[AWS EC2 200 0.053626 0 retries] describe_vpc_peering_connections()  
+
+[AWS EC2 200 0.061411 0 retries] describe_network_acls()  
+
+[AWS EC2 200 0.074356 0 retries] describe_route_tables()  
+
+[AWS ELB 200 0.099453 0 retries] describe_load_balancers()  
+
+[AWS EC2 200 0.129706 0 retries] describe_addresses()  
+
+[AWS EC2 200 0.146127 0 retries] describe_network_interfaces()  
+
+[AWS CloudFront 200 0.053703 0 retries] list_distributions()  
+
+[AWS ElasticBeanstalk 200 0.100775 0 retries] describe_applications()  
+
+[AWS OpsWorks 200 0.353396 0 retries] describe_stacks()  
+
+[AWS AutoScaling 200 0.038899 0 retries] describe_launch_configurations()  
+
+[AWS ElasticBeanstalk 200 0.040024 0 retries] describe_application_versions()  
+
+[AWS ElasticBeanstalk 200 0.061682 0 retries] describe_environments(:include_deleted=>false)  
+
+[AWS EC2 200 0.137222 0 retries] describe_instances()  
+
+[AWS EC2 200 0.123723 0 retries] describe_instance_attribute(:attribute=>"instanceInitiatedShutdownBehavior",:instance_id=>"i-04ad22305204040e8")  
+
+[AWS EC2 200 0.129848 0 retries] describe_instance_attribute(:attribute=>"instanceInitiatedShutdownBehavior",:instance_id=>"i-0220a5b1f7feb0574")  
+
+[AWS AutoScaling 200 0.060823 0 retries] describe_auto_scaling_groups()  
+
+[AWS OpsWorks 200 0.09463 0 retries] describe_stacks()  
+
+[AWS EC2 200 0.193112 0 retries] describe_volumes()  
+
+[AWS EC2 200 0.081368 0 retries] describe_instances()  
+
+[AWS RDS 200 0.114314 0 retries] describe_db_instances()  
+
+[AWS EC2 200 0.12559 0 retries] describe_security_groups()  
+
+[AWS RDS 200 0.033657 0 retries] list_tags_for_resource(:resource_name=>"arn:aws:rds:us-east-1:454212039551:db:database-1")  
+
+[AWS ElastiCache 200 0.057429 0 retries] describe_cache_clusters()  
+
+[AWS Redshift 200 0.076661 0 retries] describe_clusters()  
+
+[AWS DynamoDB 200 0.029189 0 retries] list_tables()  
+
+[AWS DynamoDB 200 0.005384 0 retries] describe_table(:table_name=>"OrganizationInfo")  
+
+[AWS S3 200 0.069964 0 retries] list_buckets()  
+
+[AWS S3 200 0.32615 0 retries] get_bucket_location(:bucket_name=>"aws-sam-cli-managed-default-samclisourcebucket-hn4xv1sfri5i")  
+
+[AWS S3 200 0.310866 0 retries] get_bucket_location(:bucket_name=>"cdktoolkit-stagingbucket-1atd2rzygla4w")  
+
+[AWS S3 200 0.362129 0 retries] get_bucket_location(:bucket_name=>"cdktoolkit-stagingbucket-ojs6axt05788")  
+
+[AWS S3 200 0.320285 0 retries] get_bucket_location(:bucket_name=>"cf-templates-16oxp02klrmom-eu-west-1")  
+
+[AWS S3 200 0.25104 0 retries] get_bucket_location(:bucket_name=>"cf-templates-16oxp02klrmom-us-east-1")  
+
+[AWS S3 200 0.023465 0 retries] get_bucket_acl(:bucket_name=>"cf-templates-16oxp02klrmom-us-east-1")  
+
+[AWS S3 404 0.008076 0 retries] get_bucket_cors(:bucket_name=>"cf-templates-16oxp02klrmom-us-east-1") AWS::S3::Errors::NoSuchCORSConfiguration The CORS configuration does not exist
+
+[AWS S3 404 0.025711 0 retries] get_bucket_lifecycle_configuration(:bucket_name=>"cf-templates-16oxp02klrmom-us-east-1") AWS::S3::Errors::NoSuchLifecycleConfiguration The lifecycle configuration does not exist
+
+[AWS S3 200 0.010828 0 retries] get_bucket_logging(:bucket_name=>"cf-templates-16oxp02klrmom-us-east-1")  
+
+[AWS S3 200 0.011439 0 retries] get_bucket_versioning(:bucket_name=>"cf-templates-16oxp02klrmom-us-east-1")  
+
+[AWS S3 404 0.023646 0 retries] get_bucket_tagging(:bucket_name=>"cf-templates-16oxp02klrmom-us-east-1") AWS::S3::Errors::NoSuchTagSet The TagSet does not exist
+
+[AWS S3 404 0.014799 0 retries] get_bucket_website(:bucket_name=>"cf-templates-16oxp02klrmom-us-east-1") AWS::S3::Errors::NoSuchWebsiteConfiguration The specified bucket does not have a website configuration
+
+[AWS S3 200 0.059519 0 retries] get_bucket_location(:bucket_name=>"staging-kem13")  
+
+[AWS S3 200 0.024738 0 retries] get_bucket_acl(:bucket_name=>"staging-kem13")  
+
+[AWS S3 404 0.010452 0 retries] get_bucket_cors(:bucket_name=>"staging-kem13") AWS::S3::Errors::NoSuchCORSConfiguration The CORS configuration does not exist
+
+[AWS S3 404 0.023067 0 retries] get_bucket_lifecycle_configuration(:bucket_name=>"staging-kem13") AWS::S3::Errors::NoSuchLifecycleConfiguration The lifecycle configuration does not exist
+
+[AWS S3 200 0.012862 0 retries] get_bucket_logging(:bucket_name=>"staging-kem13")  
+
+[AWS S3 200 0.010827 0 retries] get_bucket_versioning(:bucket_name=>"staging-kem13")  
+
+[AWS S3 404 0.02152 0 retries] get_bucket_tagging(:bucket_name=>"staging-kem13") AWS::S3::Errors::NoSuchTagSet The TagSet does not exist
+
+[AWS S3 404 0.016396 0 retries] get_bucket_website(:bucket_name=>"staging-kem13") AWS::S3::Errors::NoSuchWebsiteConfiguration The specified bucket does not have a website configuration
+
+[AWS SimpleDB 200 0.03531 0 retries] list_domains()  
+
+[AWS RDS 200 0.040835 0 retries] describe_db_subnet_groups()  
+
+[AWS EC2 200 0.07353 0 retries] describe_security_groups()  
+
+[AWS RDS 200 0.023087 0 retries] list_tags_for_resource(:resource_name=>"arn:aws:rds:us-east-1:454212039551:subgrp:default-vpc-0b706bcc0b762c91e")  
+
+[AWS RDS 200 0.017176 0 retries] describe_db_parameter_groups()  
+
+[AWS ElastiCache 200 0.058437 0 retries] describe_cache_subnet_groups()  
+
+[AWS ElastiCache 200 0.4784 0 retries] describe_cache_parameter_groups()  
+
+[AWS Redshift 200 0.04067 0 retries] describe_cluster_subnet_groups()  
+
+[AWS Redshift 200 0.027948 0 retries] describe_cluster_parameter_groups()  
+
+[AWS SQS 200 0.03637 0 retries] list_queues()  
+
+[AWS SNS 200 0.034074 0 retries] list_topics()  
+
+[AWS Kinesis 200 0.029948 0 retries] list_streams()  
+
+[AWS EC2 200 0.060262 0 retries] describe_security_groups()  
+
+[AWS RDS 200 0.029264 0 retries] describe_db_security_groups()  
+
+[AWS EC2 200 0.086478 0 retries] describe_security_groups()  
+
+[AWS RDS 200 0.023363 0 retries] list_tags_for_resource(:resource_name=>"arn:aws:rds:us-east-1:454212039551:secgrp:default")  
+
+[AWS ElastiCache 400 0.51782 0 retries] describe_cache_security_groups() AWS::ElastiCache::Errors::InvalidParameterValue Use of cache security groups is not permitted in this API version for your account.
+
+[AWS Redshift 400 0.029535 0 retries] describe_cluster_security_groups() AWS::Redshift::Errors::InvalidParameterValue VPC-by-Default customers cannot use cluster security groups
+
+[AWS SQS 200 0.0043 0 retries] list_queues()  
+
+[AWS SNS 200 0.008758 0 retries] list_topics()  
+
+[AWS S3 200 0.046738 0 retries] list_buckets()  
+
+[AWS S3 200 0.300265 0 retries] get_bucket_location(:bucket_name=>"aws-sam-cli-managed-default-samclisourcebucket-hn4xv1sfri5i")  
+
+[AWS S3 200 0.078998 0 retries] get_bucket_location(:bucket_name=>"aws-sam-cli-managed-default-samclisourcebucket-hn4xv1sfri5i")  
+
+[AWS S3 200 0.31065 0 retries] get_bucket_location(:bucket_name=>"cdktoolkit-stagingbucket-1atd2rzygla4w")  
+
+[AWS S3 200 0.082342 0 retries] get_bucket_location(:bucket_name=>"cdktoolkit-stagingbucket-1atd2rzygla4w")  
+
+[AWS S3 200 0.320909 0 retries] get_bucket_location(:bucket_name=>"cdktoolkit-stagingbucket-ojs6axt05788")  
+
+[AWS S3 200 0.08399 0 retries] get_bucket_location(:bucket_name=>"cdktoolkit-stagingbucket-ojs6axt05788")  
+
+[AWS S3 200 0.314801 0 retries] get_bucket_location(:bucket_name=>"cf-templates-16oxp02klrmom-eu-west-1")  
+
+[AWS S3 200 0.083124 0 retries] get_bucket_location(:bucket_name=>"cf-templates-16oxp02klrmom-eu-west-1")  
+
+[AWS S3 200 0.036142 0 retries] get_bucket_location(:bucket_name=>"cf-templates-16oxp02klrmom-us-east-1")  
+
+[AWS S3 200 0.010906 0 retries] get_bucket_location(:bucket_name=>"cf-templates-16oxp02klrmom-us-east-1")  
+
+[AWS S3 404 0.018122 0 retries] get_bucket_policy(:bucket_name=>"cf-templates-16oxp02klrmom-us-east-1") AWS::S3::Errors::NoSuchBucketPolicy The bucket policy does not exist
+
+[AWS S3 200 0.027529 0 retries] get_bucket_location(:bucket_name=>"staging-kem13")  
+
+[AWS S3 200 0.011522 0 retries] get_bucket_location(:bucket_name=>"staging-kem13")  
+
+[AWS S3 404 0.017897 0 retries] get_bucket_policy(:bucket_name=>"staging-kem13") AWS::S3::Errors::NoSuchBucketPolicy The bucket policy does not exist
+
+[AWS AutoScaling 200 0.07417 0 retries] describe_scheduled_actions()  
+
+[AWS CloudWatch 200 0.070969 0 retries] describe_alarms()  
+
+[AWS CloudTrail 200 0.027473 0 retries] describe_trails()  
+
+  Rendered templates/_new_template_form.html.erb (7.2ms)
+  Rendered templates/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 11198ms (Views: 10.9ms | ActiveRecord: 0.4ms)
+Started POST "/templates" for 98.116.152.207 at 2020-09-27 13:38:40 +0000
+Processing by TemplatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MWqbqsI6AoZ6rDwKRCN832k/SMIMpNyEc/fUWcy7ve9ng8odyhlgSK00Y2TUq7rMhgtm5+e+8rYQq5hkJX5QOQ==", "submit.x"=>"44", "submit.y"=>"21", "input_description"=>"", "input_filter"=>"", "selected_resources"=>"{}"}
+  Rendered templates/_new_template_form.html.erb (5.4ms)
+  Rendered templates/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 76ms (Views: 8.7ms | ActiveRecord: 0.1ms)
+Started POST "/templates" for 98.116.152.207 at 2020-09-27 13:38:42 +0000
+Processing by TemplatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CzO3+UWsXLpH3e0z0qzKSUcwWSkFs4f1hAnm9nuY8Sld2uZOTY8+dJBFsl1CJAxaqAR3DO6pqcfnVarLkl0c/w==", "submit.x"=>"52", "submit.y"=>"13", "selected_resources"=>"{:description=>\"\"}"}
+  Rendered templates/_new_template_form.html.erb (6.2ms)
+  Rendered templates/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 50ms (Views: 9.6ms | ActiveRecord: 0.1ms)
+Started POST "/templates" for 98.116.152.207 at 2020-09-27 13:38:44 +0000
+Processing by TemplatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dz/0I/tbNQR3a2JLx5dEYkbMKCmk1gGZYSU53sgZBZwh1qWU83hXyqDzPSVXH4JxqfgGDE/ML6sCeXXjIdzoSg==", "submit.x"=>"74", "submit.y"=>"20", "selected_resources"=>"{:description=>\"\"}"}
+  Rendered templates/_new_template_form.html.erb (32.2ms)
+  Rendered templates/new.html.erb within layouts/application (33.2ms)
+Completed 200 OK in 78ms (Views: 35.7ms | ActiveRecord: 0.1ms)
+Started POST "/templates" for 98.116.152.207 at 2020-09-27 13:38:45 +0000
+Processing by TemplatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VuKGGkxzZmZW/sRpirOlMz7xct893XpSyNlXFhmKj2cAC9etRFAEqIFmmwcaO2Mg0cVc+tbHVGCrhRsr8E9isQ==", "submit.x"=>"74", "submit.y"=>"21", "selected_resources"=>"{:description=>\"\"}"}
+  Rendered templates/_new_template_form.html.erb (7.5ms)
+  Rendered templates/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 51ms (Views: 10.9ms | ActiveRecord: 0.2ms)
+Started POST "/templates" for 98.116.152.207 at 2020-09-27 13:38:46 +0000
+Processing by TemplatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"joPiFfQTVYLJ7WsAZejQ5SO6zZArQsRyGw3Fm7LF6I7YarOi/DA3TB51NG71YBb2zI7jtcBY6kB4UYmmWwAFWA==", "submit.x"=>"74", "submit.y"=>"21", "selected_resources"=>"{:description=>\"\"}"}
+  Rendered templates/_new_template_form.html.erb (5.7ms)
+  Rendered templates/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 47ms (Views: 9.0ms | ActiveRecord: 0.1ms)
+Started POST "/templates" for 98.116.152.207 at 2020-09-27 13:38:47 +0000
+Processing by TemplatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zxShVttSq1MCHRuwZUATTWKj7Q8G3sGg4telE273o76Z/fDh03HJndWFRN71yNVejZfDKu3E75KBi+kuhzJOaA==", "submit.x"=>"74", "submit.y"=>"21", "selected_resources"=>"{:description=>\"\"}"}
+  Rendered templates/_new_template_form.html.erb (5.3ms)
+  Rendered templates/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 47ms (Views: 8.6ms | ActiveRecord: 0.2ms)
+Started POST "/templates" for 98.116.152.207 at 2020-09-27 13:38:47 +0000
+Processing by TemplatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zxShVttSq1MCHRuwZUATTWKj7Q8G3sGg4telE273o76Z/fDh03HJndWFRN71yNVejZfDKu3E75KBi+kuhzJOaA==", "submit.x"=>"74", "submit.y"=>"23", "selected_resources"=>"{:description=>\"\"}"}
+  Rendered templates/_new_template_form.html.erb (6.6ms)
+  Rendered templates/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 52ms (Views: 10.0ms | ActiveRecord: 0.1ms)
+Started POST "/templates" for 98.116.152.207 at 2020-09-27 13:38:47 +0000
+Processing by TemplatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zxShVttSq1MCHRuwZUATTWKj7Q8G3sGg4telE273o76Z/fDh03HJndWFRN71yNVejZfDKu3E75KBi+kuhzJOaA==", "submit.x"=>"74", "submit.y"=>"26", "selected_resources"=>"{:description=>\"\"}"}
+  Rendered templates/_new_template_form.html.erb (5.6ms)
+  Rendered templates/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 71ms (Views: 8.9ms | ActiveRecord: 0.2ms)
+Started POST "/templates" for 98.116.152.207 at 2020-09-27 13:38:48 +0000
+Processing by TemplatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zxShVttSq1MCHRuwZUATTWKj7Q8G3sGg4telE273o76Z/fDh03HJndWFRN71yNVejZfDKu3E75KBi+kuhzJOaA==", "submit.x"=>"74", "submit.y"=>"26", "selected_resources"=>"{:description=>\"\"}"}
+  Rendered templates/_new_template_form.html.erb (8.0ms)
+  Rendered templates/new.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 51ms (Views: 11.3ms | ActiveRecord: 0.1ms)
+Started POST "/templates" for 98.116.152.207 at 2020-09-27 13:38:48 +0000
+Processing by TemplatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"g3YPUwEJ/Juk2W8dfynsQGw+FRmrQqpgdWaQzrV50UXVn17kCSqeVXNBMHPvoSpTgwo7PEBYhFIWOtzzXLw8kw==", "submit.x"=>"73", "submit.y"=>"26", "selected_resources"=>"{:description=>\"\"}"}
+  Rendered templates/_new_template_form.html.erb (6.4ms)
+  Rendered templates/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 50ms (Views: 9.4ms | ActiveRecord: 0.1ms)
+Started POST "/templates" for 98.116.152.207 at 2020-09-27 13:38:51 +0000
+Processing by TemplatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rn7NacSOQAMmoe/Pz2lugdbS39dMIbBWn105yQ9W4OL4l5zezK0izfE5sKFf4aiSOebx8qc7nmT8AXX05pMNNA==", "submit.x"=>"80", "submit.y"=>"17", "selected_resources"=>"{:description=>\"\"}"}
+  Rendered templates/_new_template_form.html.erb (5.4ms)
+  Rendered templates/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 48ms (Views: 8.8ms | ActiveRecord: 0.2ms)
+Started POST "/templates" for 98.116.152.207 at 2020-09-27 13:38:52 +0000
+Processing by TemplatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VDYzeydZmQsyoqovOtckQ+d1Fmo/TwI76GYyjKoLppgC32LML3r7xeU69UGqX+JQCEE4T9RVLAmLOn6xQ85LTg==", "submit.x"=>"80", "submit.y"=>"17", "selected_resources"=>"{:description=>\"\"}"}
+  Rendered templates/_new_template_form.html.erb (10.2ms)
+  Rendered templates/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 56ms (Views: 14.1ms | ActiveRecord: 0.2ms)
+Started POST "/templates" for 98.116.152.207 at 2020-09-27 13:38:54 +0000
+Processing by TemplatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"mY1MmGULghMB3pfwimufdf6Sp5EuLs8Ci5aVCP6cuJLPZB0vbSjg3dZGyJ4a41lmEaaJtMU04TDoytk1F1lVRA==", "submit.x"=>"82", "submit.y"=>"19", "selected_resources"=>"{:description=>\"\"}"}
+  Rendered templates/_new_template_form.html.erb (5.7ms)
+  Rendered templates/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 68ms (Views: 9.2ms | ActiveRecord: 0.2ms)
+Started POST "/templates" for 98.116.152.207 at 2020-09-27 13:38:55 +0000
+Processing by TemplatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1utBm8AhI0yxcvvd55jZMFIpNfo6SGAX9v46du9OSciAAhAsyAJBgmbqpLN3EB8jvR0b39FSTiWVonZLBoukHg==", "submit.x"=>"80", "submit.y"=>"19", "selected_resources"=>"{:description=>\"\"}"}
+  Rendered templates/_new_template_form.html.erb (7.4ms)
+  Rendered templates/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 50ms (Views: 10.6ms | ActiveRecord: 0.1ms)
+Started POST "/templates" for 98.116.152.207 at 2020-09-27 13:38:56 +0000
+Processing by TemplatesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fWA1K99vjtVubwT6/1zWPEWBTU0n4Kr93AaNzI4RVdoriWSc10zsG7n3W5Rv1BAvqrVjaMz6hM+/WsHxZ9S4DA==", "submit.x"=>"80", "submit.y"=>"19", "selected_resources"=>"{:description=>\"\"}"}
+Redirected to https://52.3.247.156/templates/show
+Completed 302 Found in 42ms (ActiveRecord: 0.2ms)
+Started GET "/templates/show" for 98.116.152.207 at 2020-09-27 13:38:56 +0000
+Processing by TemplatesController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendered templates/_save_template_form.html.erb (2.6ms)
+  Rendered templates/show.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 70ms (Views: 6.3ms | ActiveRecord: 0.1ms)
+Started GET "/index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP" for 176.113.115.214 at 2020-09-27 13:44:17 +0000
+
+ActionController::RoutingError (No route matches [GET] "/index.php"):
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.11.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.11.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.1) lib/rails/application.rb:165:in `call'
+  railties (4.2.11.1) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.2.11.1) lib/rails/railtie.rb:194:in `method_missing'
+  thin (1.6.4) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.4) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.4) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.4) lib/thin/connection.rb:53:in `process'
+  thin (1.6.4) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.9.1) lib/eventmachine.rb:193:in `run_machine'
+  eventmachine (1.0.9.1) lib/eventmachine.rb:193:in `run'
+  thin (1.6.4) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.4) lib/thin/server.rb:162:in `start'
+  thin (1.6.4) lib/thin/controllers/controller.rb:87:in `start'
+  thin (1.6.4) lib/thin/runner.rb:200:in `run_command'
+  thin (1.6.4) lib/thin/runner.rb:156:in `run!'
+  thin (1.6.4) bin/thin:6:in `<top (required)>'
+  /usr/local/bin/thin:23:in `load'
+  /usr/local/bin/thin:23:in `<main>'
+
+
+Started POST "/api/jsonws/invoke" for 176.113.115.214 at 2020-09-27 13:44:17 +0000
+
+ActionController::RoutingError (No route matches [POST] "/api/jsonws/invoke"):
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.11.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.11.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.1) lib/rails/application.rb:165:in `call'
+  railties (4.2.11.1) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.2.11.1) lib/rails/railtie.rb:194:in `method_missing'
+  thin (1.6.4) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.4) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.4) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.4) lib/thin/connection.rb:53:in `process'
+  thin (1.6.4) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.9.1) lib/eventmachine.rb:193:in `run_machine'
+  eventmachine (1.0.9.1) lib/eventmachine.rb:193:in `run'
+  thin (1.6.4) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.4) lib/thin/server.rb:162:in `start'
+  thin (1.6.4) lib/thin/controllers/controller.rb:87:in `start'
+  thin (1.6.4) lib/thin/runner.rb:200:in `run_command'
+  thin (1.6.4) lib/thin/runner.rb:156:in `run!'
+  thin (1.6.4) bin/thin:6:in `<top (required)>'
+  /usr/local/bin/thin:23:in `load'
+  /usr/local/bin/thin:23:in `<main>'
+
+
+Started GET "/?XDEBUG_SESSION_START=phpstorm" for 176.113.115.214 at 2020-09-27 13:44:17 +0000
+Processing by TemplatesController#index as HTML
+  Parameters: {"XDEBUG_SESSION_START"=>"phpstorm"}
+Filter chain halted as #<Proc:0x00000000044265e0@/usr/local/share/ruby/gems/2.4/gems/actionpack-4.2.11.1/lib/action_controller/metal/http_authentication.rb:70> rendered or redirected
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms)
+Started GET "/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php" for 176.113.115.214 at 2020-09-27 13:54:50 +0000
+
+ActionController::RoutingError (No route matches [GET] "/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php"):
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.11.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.11.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.1) lib/rails/application.rb:165:in `call'
+  railties (4.2.11.1) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.2.11.1) lib/rails/railtie.rb:194:in `method_missing'
+  thin (1.6.4) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.4) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.4) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.4) lib/thin/connection.rb:53:in `process'
+  thin (1.6.4) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.9.1) lib/eventmachine.rb:193:in `run_machine'
+  eventmachine (1.0.9.1) lib/eventmachine.rb:193:in `run'
+  thin (1.6.4) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.4) lib/thin/server.rb:162:in `start'
+  thin (1.6.4) lib/thin/controllers/controller.rb:87:in `start'
+  thin (1.6.4) lib/thin/runner.rb:200:in `run_command'
+  thin (1.6.4) lib/thin/runner.rb:156:in `run!'
+  thin (1.6.4) bin/thin:6:in `<top (required)>'
+  /usr/local/bin/thin:23:in `load'
+  /usr/local/bin/thin:23:in `<main>'
+
+
+Started POST "/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php" for 176.113.115.214 at 2020-09-27 13:54:51 +0000
+
+ActionController::RoutingError (No route matches [POST] "/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php"):
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.11.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.11.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.11) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.11) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.11.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.11) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.11.1) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.11) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.11.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.11.1) lib/rails/application.rb:165:in `call'
+  railties (4.2.11.1) lib/rails/railtie.rb:194:in `public_send'
+  railties (4.2.11.1) lib/rails/railtie.rb:194:in `method_missing'
+  thin (1.6.4) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.4) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.4) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.4) lib/thin/connection.rb:53:in `process'
+  thin (1.6.4) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.9.1) lib/eventmachine.rb:193:in `run_machine'
+  eventmachine (1.0.9.1) lib/eventmachine.rb:193:in `run'
+  thin (1.6.4) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.4) lib/thin/server.rb:162:in `start'
+  thin (1.6.4) lib/thin/controllers/controller.rb:87:in `start'
+  thin (1.6.4) lib/thin/runner.rb:200:in `run_command'
+  thin (1.6.4) lib/thin/runner.rb:156:in `run!'
+  thin (1.6.4) bin/thin:6:in `<top (required)>'
+  /usr/local/bin/thin:23:in `load'
+  /usr/local/bin/thin:23:in `<main>'
+
+

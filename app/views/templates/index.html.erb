@@ -1,0 +1,34 @@
+<div id="container">
+<h1><%= link_to image_tag("logo_aws.gif"), 'http://aws.amazon.com'%></a>&nbsp;&nbsp;AWS CloudFormer <%= @CloudFormer_Version %></h1>
+<div id="Loader">
+<img src="images/loader.gif" alt=""/>
+&nbsp;Analyzing your account
+</div>
+<div id="opaque">
+</div>
+<p>
+Welcome to the <%= link_to 'AWS CloudFormation', 'http://aws.amazon.com/cloudformation' %> template creation utility.
+This utility helps you to create a CloudFormation template from the AWS resources currently running in your account
+using a few simple steps. While the created template is complete and can be used to launch an AWS CloudFormation
+stack, it is a starting point for further customization. You should consider at least the following:
+</p>
+<p>
+<ul class="keep">
+<li>Add Parameters to enable stacks to be customized at launch time.</li>
+<li>Add Mappings to allow the template to be customized to the specific environment.</li>
+<li>Replace static values with "Ref" and "Fn::GetAtt" functions to flow property data between resources where the value of one property is dependent on the value of a property from a different resource.</li>
+<li>Remove any static IP addresses, availability zones and other environmental properties to create more generalized configurations.</li>
+<li>Use CloudFormation metadata and on-host helper scripts to deploy files, packages and run commands on your Amazon EC2 instances.</li>
+<li>Customize any RDS Database, ElastiCache cluster or Redshift cluster passwords.</li>
+<li>Customize or add more stack outputs to list important information needed by the stack user.</li>
+</ul>
+</p>
+<%= render 'start_process_form' %>
+<p>
+For more information on how to build a template see the <a href="http://docs.amazonwebservices.com/AWSCloudFormation/latest/UserGuide/">AWS CloudFormation User Guide</a>. You can
+also check out our <a href="http://aws.amazon.com/cloudformation/aws-cloudformation-templates/">sample templates</a> demonstrating various template features.
+</p>
+<p>
+By default, the account credentials will be used from the entries you typed in when AWS CloudFormer was created, however, they can be overridden by clicking <a href="/credentials">here</a>.
+</p>
+</div>

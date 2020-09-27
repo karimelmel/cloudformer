@@ -1,0 +1,11 @@
+<%= form_tag("/savetemplate") %>
+
+<p>
+<%= label_tag "template_name", "Template Name"%>
+<%= text_field_tag "template_name", 'cloudformer.template', :size => 22, :title => "Enter the name of the template file to be stored in the S3 bucket", :placeholder => "Template name"%>
+<%= label_tag "bucket_name", "S3 Bucket"%>
+<%= select_tag "bucket_name", options_for_select(session[:bucket_list]), :title => "Select the bucket where the template is to be stored" %>
+</p>
+
+<%= image_submit_tag("btn_save_template.gif", :name => "submit") %>
+<%= image_submit_tag("btn_cancel.gif", :name => "cancel_button") %>

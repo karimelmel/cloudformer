@@ -1,0 +1,120 @@
+<%= javascript_include_tag 'select_all_resources' %>
+<%= javascript_include_tag 'toggle_visibility' %>
+
+<%= form_for(@template) do |f| %>
+
+  <%= image_submit_tag("btn_back.gif", :name => "back_button") if !@template.first_step? %>
+  <%= image_submit_tag("btn_cancel.gif", :name => "cancel_button") %>
+  <%= image_submit_tag("btn_continue.gif", :name => "submit") %>
+
+  <% if @template.text_for_step[@template.current_step] %>
+    <h2><%= @template.text_for_step[@template.current_step][:step_title] %></h2>
+    <p><%= @template.text_for_step[@template.current_step][:step_description] %></p>
+  <% end %>
+
+  <% if @template.resources_for_step[@template.current_step] %>
+    <% @template.resources_for_step[@template.current_step].each do |resource| %>
+      <% if @template.resource_metadata[resource][:resource_type] == :text %>
+        <% annotation = "" %>
+        <% annotation = @template.resource_metadata[resource][:resource_annotation] if @template.resource_metadata[resource][:resource_annotation] %>
+        <% tooltip = "" %>
+        <% tooltip = @template.resource_metadata[resource][:resource_tooltip] if @template.resource_metadata[resource][:resource_tooltip] %>
+        <h3><%= @template.resource_metadata[resource][:resource_title] %> </h3>
+        <% existing_value = @template.selected_resources ? @template.selected_resources[resource] || "" : "" %>
+        <% if @template.resource_metadata[resource][:resource_attributes] == :single_line %>
+          <%= text_field_tag "input_#{resource}", existing_value, :size => 40, :placeholder => annotation, :title => tooltip %>
+        <% else %>
+          <%= text_area_tag "input_#{resource}", existing_value, :rows => 5, :cols => 40, :placeholder => annotation, :title => tooltip %>
+        <% end %>
+      <% elsif @template.resource_metadata[resource][:resource_type] == :option %>
+        <% tooltip = "" %>
+        <% tooltip = @template.resource_metadata[resource][:resource_tooltip] if @template.resource_metadata[resource][:resource_tooltip] %>
+        <br/><%= check_box_tag "input_#{resource}", existing_value %> <%= label_tag "input_#{resource}", @template.resource_metadata[resource][:resource_title], :title => tooltip %>
+      <% elsif @template.resource_metadata[resource][:resource_type] == :checkbox %>
+        <% existing_value_array = @template.selected_resources ? @template.selected_resources[resource] || [] : [] %>
+        <h3><%= @template.resource_metadata[resource][:resource_title] %> </h3>
+        <ul>
+        <% if !@template.all_resources || !@template.all_resources[resource] || @template.all_resources[resource].empty? %>
+          <% if !@template.all_errors || !@template.all_errors[resource] %>
+            <li>No resources found in this AWS account</li>
+          <% else %>
+            <li>Error enumerating resources: <%= @template.all_errors[resource] %></li>
+          <% end %>
+        <% else %>
+          <div id = div_<%= resource %>>
+          <div id="select_all">
+            <%= check_box_tag "input_select_all_#{resource}", "False", false, :onclick => "select_all_resources(this, 'div_#{resource}')" %>
+            Select/Deselect all <%= @template.resource_metadata[resource][:resource_title] %> 
+          </div>
+          <% @template.all_resources[resource].each do |item| %>
+            <li>
+              <% existing_value = false %>
+              <% existing_value_array.each do |existing_selection| %>
+                <% if existing_selection[@template.resource_metadata[resource][:resource_id]] == item[@template.resource_metadata[resource][:resource_id]] %>
+                  <% existing_value = true %>
+                <% end %>
+              <% end %>
+              <%= check_box_tag "input_#{resource}[]", item, existing_value %> <%= label_tag "input_#{resource}[]", item[@template.resource_metadata[resource][:resource_display_name]], :title => CF_converter.get_resource_tooltip(@template, resource, item) %>
+            </li>
+          <% end %>
+          </div>
+        <% end %>
+        </ul>
+      <% end %>
+    <% end %>
+  <% end %>
+
+  <% if @template.summarize? %>
+    <% @template.selected_resources.each do |resource_name, resource_list| %>
+       <% if @template.resource_metadata[resource_name][:resource_id] && resource_list.length > 0 %>
+         <h3><%= @template.resource_metadata[resource_name][:resource_title] %></h3>
+         <ul>
+         <% resource_list.each do |resource| %>
+            <li>
+            <div id="summary">
+              <b><%= resource[@template.resource_metadata[resource_name][:resource_id]] %></b>
+              &nbsp;&nbsp;
+              <a href="#" onclick="toggle_visibility('<%= "advanced_#{resource[@template.resource_metadata[resource_name][:resource_id]]}" %>');">Modify &darr;</a>
+              <div id='<%= "advanced_#{resource[@template.resource_metadata[resource_name][:resource_id]]}" %>', style="display:none">
+                <br/>&nbsp;&nbsp;
+                <%= label_tag "", "Logical Name:", :style => "vertical-align:top" %>
+                <%= text_field_tag "templatename_#{Object::const_get(@template.resource_metadata[resource_name][:template_converter]).ResourceName(resource)}", Object::const_get(@template.resource_metadata[resource_name][:template_converter]).ResourceName(resource), :size => 60, :title => "Set the logical name of the resource for the template", :style => "vertical-align:top"%>
+                <% output_list = Object::const_get(@template.resource_metadata[resource_name][:template_converter]).OutputList(resource) %>
+                <% if !output_list.empty? %>
+                  <br/>&nbsp;&nbsp;
+                  <%= label_tag "", "Outputs:", :style => "vertical-align:top" %>
+                  <%= select_tag "outputs_#{Object::const_get(@template.resource_metadata[resource_name][:template_converter]).ResourceName(resource)}[]", options_for_select(output_list), :scroll=>"no", :multiple => true, :size => output_list.length, :title => "Select any attributes of this resource to be exposed as template Outputs" %>
+                <% end %>
+              </div>
+            </div>
+            <br/>
+            </li>
+         <% end %>
+         </ul>
+       <% end %>
+    <% end %>
+  <% end %>
+
+  <%= hidden_field_tag :selected_resources, @template[:selected_resources].to_s %>
+
+  <p/>
+
+  <% if @debug %>
+
+    <% if !@template.first_step? %>
+      <hr/>
+      <h3>Selected Resources</h3>
+	  <pre>
+	  <%= JSON.pretty_generate(@template.selected_resources) %>
+	  </pre>
+	<% end %>
+	
+	<hr/>
+	<h3>All Resources</h3> 
+	<pre>
+	<%= JSON.pretty_generate(@all) %>
+	</pre>
+  <%end%>
+
+<% end %>
+

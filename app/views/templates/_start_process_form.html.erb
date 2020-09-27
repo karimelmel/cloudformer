@@ -1,0 +1,14 @@
+<%= javascript_include_tag 'unhide' %>
+<%= form_tag("/newtemplate", :name => "start_form") do %>
+
+<div id="region">
+<%= label_tag "region_name", "Select the AWS Region"%>
+<%= select_tag "region_name", options_for_select(session[:region_list], session[:region]), :title => "Select the AWS region from which to inspect your AWS resources" %>
+</div>
+
+<p>
+<small>When you press "Create Template" we will analyze all of the AWS resources in your account. This may take a little time.</small>
+</p>
+<%= image_submit_tag("btn_new_template.gif", :name => "submit", :onClick => "unhide();") %>
+
+<% end %>
